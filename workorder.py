@@ -1,4 +1,5 @@
-equipment = dict([])
+import load_data as data
+equipment = data.equipment_dict()
 workers = dict([])
 
 """ 
