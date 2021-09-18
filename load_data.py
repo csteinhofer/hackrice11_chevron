@@ -1,5 +1,8 @@
 import pandas as pd
 
+# https://pandas.pydata.org/docs/
+
+# reading data from csv
 equipment_df = pd.read_csv('data/equipment.csv')
 facility_df = pd.read_csv('data/fac_detail.csv')
 work_orders_df = pd.read_csv('data/work_orders.csv')
@@ -13,5 +16,5 @@ def equipment_dict():
     """
     return equipment_df.to_dict()
 
-print(equipment_dict()
-      )
+
+print(equipment_dict())
