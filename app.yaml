@@ -1,5 +1,15 @@
 #app.yaml
 runtime: python38
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: main.app
+
+libraries:
+- name: flask
+  version: 2.0.1
 
 env_variables:
   CLOUD_SQL_USERNAME: flaskapp
