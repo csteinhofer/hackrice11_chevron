@@ -1,0 +1,8 @@
+#app.yaml
+runtime: python38
+
+env_variables:
+  CLOUD_SQL_USERNAME: flaskapp
+  CLOUD_SQL_PASSWORD: cabbage
+  CLOUD_SQL_DATABASE_NAME: chevron
+  CLOUD_SQL_CONNECTION_NAME: hackrice11:us-central1:mysqlchev
