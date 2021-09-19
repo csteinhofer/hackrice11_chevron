@@ -17,4 +17,4 @@ def equipment_dict():
     return equipment_df.to_dict()
 
 
-print(equipment_dict())
+
