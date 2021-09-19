@@ -27,7 +27,8 @@ def assign_work(workorder):
     elig_workers = get_eligible_workers(workorder['equipment_type'])
 
     # get facility location and calculate travel time and note if full
-    data_tools.get_facility_detail(workorder['facility'])
+    wo_fac = data_tools.get_facility_detail(workorder['facility'])
+    gmaps_tools.get_drive_time(wo_fac['latit'], wo_fac['longit'])
 
     # need to figure out how to store current time left of job -- feature in workers?
 

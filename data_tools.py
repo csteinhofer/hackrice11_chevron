@@ -1,28 +1,30 @@
 import pandas as pd
-
+import main
 # https://pandas.pydata.org/docs/
 
 # reading data from csv
-equipment_df = pd.read_csv(
+def data_init():
+    equipment_df = pd.read_csv(
     'data/equipment.csv')  # equipment_type,prob_of_fail,min_hrs, max_hrs, fac1,fac2,fac3,fac4,fac5
-facility_df = pd.read_csv('data/fac_detail.csv')  # facility,latit,longit,max_occ
-work_orders_df = pd.read_csv(
+    facility_df = pd.read_csv('data/fac_detail.csv')  # facility,latit,longit,max_occ
+    work_orders_df = pd.read_csv(
     'data/work_orders.csv')  # order_id, facility,equipment_type,equipment_id,priority, completion_time,submission_time
-workers_df = pd.read_csv('data/workers.csv')  # name,equipment_cert,shift,latit,longit
+    workers_df = pd.read_csv('data/workers.csv')  # name,equipment_cert,shift,latit,longit
 
-# cleaning
-# setting equipment type to lower for matching
-workers_df['equipment_cert'] = workers_df['equipment_cert'].str.lower()
-workers_df['name'] = workers_df['name'].str.lower()
-workers_df['shift'] = workers_df['shift'].str.lower()
-work_orders_df['equipment_type'] = work_orders_df['equipment_type'].str.lower()
-work_orders_df['facility'] = work_orders_df['facility'].str.lower()
+    # cleaning
+    # setting equipment type to lower for matching
+    workers_df['equipment_cert'] = workers_df['equipment_cert'].str.lower()
+    workers_df['name'] = workers_df['name'].str.lower()
+    workers_df['shift'] = workers_df['shift'].str.lower()
+    work_orders_df['equipment_type'] = work_orders_df['equipment_type'].str.lower()
+    work_orders_df['facility'] = work_orders_df['facility'].str.lower()
 
-# creates datetime objects for submission time in work order table
-work_orders_df['submission_time'] = pd.to_datetime(work_orders_df['submission_time'])
+    # creates datetime objects for submission time in work order table
+    work_orders_df['submission_time'] = pd.to_datetime(work_orders_df['submission_time'])
 
 # creating new features for live updating
-facility_df['c_occ'] = 0
+    facility_df['c_occ'] = 0
+    workers_df['order_q'] = [list() for x in range(len(workers_df.index))]
 
 
 def equipment_dict():
@@ -39,7 +41,6 @@ def facility_dict():
     :return: returns dictionary representation of facility data
     """
     return facility_df.to_dict(orient='records')
-
 
 # wrangling data
 def get_cert_workers(machine):

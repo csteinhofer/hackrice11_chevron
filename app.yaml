@@ -5,14 +5,14 @@ threadsafe: true
 
 handlers:
 - url: /.*
-  script: main.app
+  script: main.py
 
 libraries:
 - name: flask
   version: .12
 
 env_variables:
-  CLOUD_SQL_USERNAME: flaskapp
-  CLOUD_SQL_PASSWORD: cabbage
-  CLOUD_SQL_DATABASE_NAME: chevron
+  DB_USER: flaskapp
+  DB_PASS: cabbage
+  DB_NAME: chevron
   CLOUD_SQL_CONNECTION_NAME: hackrice11:us-central1:mysqlchev
