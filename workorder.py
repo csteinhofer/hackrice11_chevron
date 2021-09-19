@@ -6,14 +6,14 @@ workers = dict([])
 Goes through a dictionary of equipment and returns a list of equipment with the 
 specified priority number.
 """
-def getPriority(equipment, num):
-    priority = []
-    for (machine in equipment):
-        # if the priority number matched at the dictionary matches the specified one,
-        # add the equipment to the priority list
-        if (equipment.get(machine) == num):
-            priority.add(equipment)
-    return priority
+# def getPriority(equipment, num):
+#     priority = []
+#     for (machine in equipment):
+#         # if the priority number matched at the dictionary matches the specified one,
+#         # add the equipment to the priority list
+#         if (equipment.get(machine) == num):
+#             priority.add(equipment)
+#     return priority
 
 """
 Goes through a dictionary of equipment and workers, and matches workers to equipment.
