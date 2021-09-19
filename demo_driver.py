@@ -15,3 +15,7 @@ def simulate_workday(start):
 
 
 simulate_workday(start_dt)
+
+
+def get_current_shift():
+    return None

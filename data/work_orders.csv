@@ -1,4 +1,4 @@
-﻿order_id, facility, equipment_type,equipment_id,priority,completion_time,submission_time
+﻿order_id,facility,equipment_type,equipment_id,priority,completion_time,submission_time
 1001,Fac1,Pump,P032,5,3,2018-09-14 22:12:00
 1002,Fac3,Conveyer,Con391,1,9,2018-09-13 18:30:00
 1003,Fac4,Seperator,Sep028,2,3,2018-09-13 05:41:00
