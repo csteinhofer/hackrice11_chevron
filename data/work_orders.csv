@@ -1,14 +1,14 @@
-﻿Work Order #,Facility,Equipment Type,Equipment ID,Priority(1-5),Time to Complete,Submission Timestamp
+﻿order_id, facility, equipment_type,equipment_id,priority,completion_time,submission_time
 1001,Fac1,Pump,P032,5,3,2018-09-14 22:12:00
-1002,Fac3,Conveyer,Con391,1,9,2018-09-13 18:30:00
-1003,Fac4,Seperator,Sep028,2,3,2018-09-13 05:41:00
-1004,Fac5,Sensor,Sen826,4,1,2018-09-13 10:20:00
-1005,Fac1,Security,Sec032,1,2,2018-09-13 10:20:00
-1006,Fac5,Electricity,El087,3,2,2018-09-14 08:34:00
-1007,Fac1,Networking,Net012,3,4,2018-09-15 14:52:00
-1008,Fac1,Vehicle,V053,4,4,2018-09-12 12:36:00
-1009,Fac2,HVAC,HVAC021,2,18,2018-09-12 09:23:00
-1010,Fac3,Compressor,Com471,5,9,2018-09-13 18:38:00
+1002,Fac3,Conveyer,Con391,1,9,2018-09-13 18:30:00
+1003,Fac4,Seperator,Sep028,2,3,2018-09-13 05:41:00
+1004,Fac5,Sensor,Sen826,4,1,2018-09-13 10:20:00
+1005,Fac1,Security,Sec032,1,2,2018-09-13 10:20:00
+1006,Fac5,Electricity,El087,3,2,2018-09-14 08:34:00
+1007,Fac1,Networking,Net012,3,4,2018-09-15 14:52:00
+1008,Fac1,Vehicle,V053,4,4,2018-09-12 12:36:00
+1009,Fac2,HVAC,HVAC021,2,18,2018-09-12 09:23:00
+1010,Fac3,Compressor,Com471,5,9,2018-09-13 18:38:00
 1011,Fac2,Vehicle,Veh279,2,1,2018-09-15 14:14:00
 1012,Fac5,Security,Sec174,2,2,2018-09-15 18:39:00
 1013,Fac3,Electricity,El649,5,6,2018-09-13 17:59:00

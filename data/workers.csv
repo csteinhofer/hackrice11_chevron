@@ -1,4 +1,4 @@
-﻿Name,Equipment Certification(s),Shifts,Latitude,Longitude
+﻿name,equipment_cert,shift,latit,longit
 Bob,"Sensor, Security, Networking",Morning,?,?
 Sally,"Pump, HVAC",Morning,?,?
 Marcus,Vehicle,Morning,?,?

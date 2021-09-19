@@ -1,4 +1,4 @@
-﻿Equipment,Probability of Failure,min_hrs, max_hrs,Fac1,Fac2,Fac3,Fac4,Fac5
+﻿equipment_type,prob_of_fail,min_hrs, max_hrs, fac1,fac2,fac3,fac4,fac5
 Pump,0.008695652,1,12,4,7,4,6,7
 Compressor,0.043478261,2,13,5,4,5,5,9
 Seperator,0.130434783,3,5,1,2,3,2,3
